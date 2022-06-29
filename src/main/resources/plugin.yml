@@ -1,0 +1,8 @@
+name: MC-Jail
+version: '${version}'
+main: fr.erusel.mcjail.Mcjail
+api-version: 1.16
+authors: [ Erusel ]
+commands:
+  mcjail:
+    description: Permet d'acceder a toutes les commandes du plugin
