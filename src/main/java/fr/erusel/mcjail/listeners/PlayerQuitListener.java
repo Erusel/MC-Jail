@@ -19,5 +19,4 @@ public class PlayerQuitListener implements Listener {
         Player player = event.getPlayer();
     }
 
-
 }

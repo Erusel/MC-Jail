@@ -120,6 +120,19 @@ public class GameManager {
         return gameState;
     }
 
+    public Boolean isWaiting(){
+        return gameState.equals(GState.WAITING);
+    }
+    public Boolean isPlaying(){
+        return gameState.equals(GState.PLAYING);
+    }
+    public Boolean isFinishing(){
+        return gameState.equals(GState.FINISHING);
+    }
+    public Boolean isFinished(){
+        return gameState.equals(GState.FINISHED);
+    }
+
     public void setGameState(GState state){
         gameState = state;
     }
