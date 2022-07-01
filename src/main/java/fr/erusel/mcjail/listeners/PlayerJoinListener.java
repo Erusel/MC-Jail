@@ -39,5 +39,6 @@ public class PlayerJoinListener implements Listener {
         }
 
         event.setJoinMessage(Mcjail.prefix + player.getName() + " a rejoint le serveur");
+        mcjail.getScoreboardManager().refreshWaitingScoreboard();
     }
 }

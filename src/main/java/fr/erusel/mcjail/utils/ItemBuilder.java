@@ -41,6 +41,7 @@ import java.util.function.Consumer;
  * Simple {@link ItemStack} builder
  *
  * @author MrMicky
+ * Modified by Erusel
  */
 public class ItemBuilder {
 
@@ -175,6 +176,11 @@ public class ItemBuilder {
 
     public ItemBuilder armorColor(Color color) {
         return meta(LeatherArmorMeta.class, m -> m.setColor(color));
+    }
+
+    public ItemBuilder unbreakable(Boolean value){
+        this.meta.setUnbreakable(value);
+        return this;
     }
 
     public ItemStack build() {
